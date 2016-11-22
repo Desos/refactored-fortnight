@@ -1,7 +1,6 @@
 
   
 var mjAPI = require("mathjax-node/lib/mj-single.js")
-var fs = require("fs")
 mjAPI.config({
   MathJax: {
     // traditional MathJax configuration
