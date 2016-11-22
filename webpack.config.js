@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
   context: path.resolve(__dirname, './src/'),
-  entry: path.resolve(__dirname, './src/index.js'),
+  entry: [ path.resolve(__dirname, './src/index.js')],
   output: {
     path: './bin/',
     filename: 'bundle.js'
@@ -13,13 +13,6 @@ module.exports = {
   },
 
   devtool: 'inline-source-map',
-target:'node',
-  node: {
-console: 'empty',
-fs: 'empty',
-net: 'empty',
-tls: 'empty'
-}
 }
 
 

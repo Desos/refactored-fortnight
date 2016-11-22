@@ -1,20 +1,11 @@
 <html>
-  <head>
-    <script type="text/javascript" src="bundle.js"></script>
-    <script type="text/javascript" src="/home/peter/Development/maths/node_modules/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [["$","$"],["\\(","\\)"]]
-        }
-      });
-    </script>
-
+  <head>   
   </head>
   <body>
-    <textarea  id="MathInput" size="50"></textarea>
+    <script type="text/javascript" src="bundle.js"></script>
+    <textarea  id="math-input" size="50"></textarea>
     <div>
-      <button id="Update">Update</button>
+      <button id="update">Update</button>
       <div id="MathOutput">
         \({}\)
       </div>
