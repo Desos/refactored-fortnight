@@ -12,5 +12,16 @@ module.exports = {
     inline: true
   },
 
-  devtool: 'inline-source-map'
+  devtool: 'inline-source-map',
+target:'node',
+  node: {
+console: 'empty',
+fs: 'empty',
+net: 'empty',
+tls: 'empty'
 }
+}
+
+
+
+
