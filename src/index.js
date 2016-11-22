@@ -1,23 +1,12 @@
+const katex = require('katex')
 
-  
-var mjAPI = require("mathjax-node/lib/mj-single.js")
-mjAPI.config({
-  MathJax: {
-    // traditional MathJax configuration
-  }
-});
-mjAPI.start();
 
-document.getElementById("Update").onclick = function () {UpdateMath()}
+document.getElementById("update").onclick = function () {UpdateMath()}
 
 function UpdateMath () {
-  const math = document.getElementById("math-input")
-  mjAPI.typeset({
-  math: math,
-  format: "TeX", // "inline-TeX", "MathML"
-  mml:true, //  svg:true,
-  }, function (data) {
-    if (!data.errors) {console.log(data.mml)}
-  });
-
+  var mathin = document.getElementById("math-input").value
+  console.log(mathin)
+  var math = katex.renderToString(mathin,{ displayMode: true })
+  console.log(math)
+  document.getElementById("math-output").innerHTML = math
 }

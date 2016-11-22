@@ -12,10 +12,11 @@
   "devDependencies": {
     "fs": "0.0.1-security",
     "jsdom": "^9.8.3",
-    "mathjax-node": "^0.5.1",
+    "katex": "^0.6.0",
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2",
     "webpack-hot-middleware": "^2.13.2",
     "webpack-hot-server": "^0.6.1"
-  }
+  },
+  "dependencies": {}
 }
